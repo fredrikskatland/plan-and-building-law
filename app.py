@@ -17,7 +17,7 @@ from langchain.vectorstores import Chroma
 import os
 
 
-local = True
+local = False
 
 
 client = Client()
