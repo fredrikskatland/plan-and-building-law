@@ -8,4 +8,5 @@ bs4
 pinecone-client
 langsmith==0.0.15
 unstructured
+pysqlite3-binary
 chromadb==0.4.5
