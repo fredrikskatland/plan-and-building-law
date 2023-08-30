@@ -7,3 +7,4 @@ xmltodict==0.13.0
 bs4
 pinecone-client
 langsmith==0.0.15
+unstructured

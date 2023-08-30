@@ -17,7 +17,7 @@ from langchain.vectorstores import Chroma
 import os
 
 
-local = True
+local = False
 
 
 client = Client()
@@ -292,7 +292,7 @@ def configure_retriever():
         retriever = docsearch.as_retriever()
         return retriever
 
-def reload_llm(model_choice="gpt-4", temperature=0, system_message_choice="Original"):
+def reload_llm(model_choice="gpt-4", temperature=0, system_message_choice="New (extensive summary)"):
     if local:
         llm = ChatOpenAI(temperature=temperature, streaming=True, model=model_choice, )
     else:
